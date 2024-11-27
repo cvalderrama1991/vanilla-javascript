@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-primary: white;
+  --text-primary: black;
+}
+
+[data-theme="dark"] {
+  --bg-primary: black;
+  --text-primary: white;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
