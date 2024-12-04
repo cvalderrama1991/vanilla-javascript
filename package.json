@@ -1,0 +1,13 @@
+{
+  "name": "vanilla-javascript",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "JavaScript application to test JavaScript without a framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --trace-warnings --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos",
+  "license": "MIT"
+}
