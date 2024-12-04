@@ -1,3 +1,5 @@
+import { removeDuplicateFromArray } from './scripts/functions.js';
+
 function rmDuplicates(arr) {
   if (!Array.isArray(arr)) return 'Not an array!';
 
@@ -20,4 +22,9 @@ const arr5 = undefined;
 const arr6 = {};
 let arr7;
 
-console.log(rmDuplicates(arr1));
+// console.log(rmDuplicates(arr1));
+
+const duplicates = ['one', 'two', 'three', 'four', 'four', 'five', 'six', 'seven', 'seven'];
+
+console.log(removeDuplicateFromArray(duplicates));
+
