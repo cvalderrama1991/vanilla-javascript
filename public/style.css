@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: sans-serif;
+  color-scheme: light dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
