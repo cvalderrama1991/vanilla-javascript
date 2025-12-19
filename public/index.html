@@ -1,46 +1,61 @@
 <!doctype html>
 <html dir="ltr" lang="en" data-theme="system">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Vanilla JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+    <link rel="icon" href="flower-small.svg" type="image/svg+xml" sizes="any" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width" />
-  <title>Vanilla JavaScript</title>
-  <link rel="stylesheet" type="text/css" href="public/style.css" />
-</head>
+  <body>
+    <header class="main-header">
+      <a href="#home">
+        <div class="home-link-container">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.7913 1.2522L27.9652 11.687L23.7913 22.1218L19.6174 11.687L23.7913 1.2522Z"
+            />
+            <path
+              d="M39.8301 7.96007L35.403 18.29L25.0731 22.7171L29.5002 12.3872L39.8301 7.96007Z"
+            />
+            <path
+              d="M46.4281 24.0445L35.9933 28.2184L25.5586 24.0445L35.9933 19.8706L46.4281 24.0445Z"
+            />
+            <path
+              d="M39.7202 40.0834L29.3903 35.6563L24.9632 25.3263L35.2931 29.7535L39.7202 40.0834Z"
+            />
+            <path
+              d="M23.6358 46.6813L19.4619 36.2466L23.6358 25.8118L27.8097 36.2466L23.6358 46.6813Z"
+            />
+            <path
+              d="M7.59692 39.9733L12.024 29.6434L22.3539 25.2163L17.9268 35.5462L7.59692 39.9733Z"
+            />
+            <path
+              d="M0.998993 23.889L11.4338 19.715L21.8686 23.889L11.4338 28.0629L0.998993 23.889Z"
+            />
+            <path
+              d="M7.70693 7.85011L18.0368 12.2772L22.4639 22.6071L12.134 18.18L7.70693 7.85011Z"
+            />
+          </svg>
+        </div>
+      </a>
 
-<body>
-  <header class="main-header">
-    <a data-link="" href="#home" class="nav-link">Home</a>
-    <nav data-nav="main" class="main-nav">
-      <ul data-list="nav" class="">
-        <li>
-          <a data-link="about" href="#about" class="nav-link">About</a>
-        </li>
-        <li>
-          <a data-link="projects" href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li>
-          <a data-link="contact" href="#contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <select class="theme-selector" data-selector="theme">
-      <option value="system">System</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
-  </header>
-  <main>
-    <section id="home" class="page">
       <h1>Vanilla JavaScript</h1>
-      <h2>This is muy second heading</h2>
-      <p>Making changes to see if they update.</p>
-    </section>
-    <section id="projects" class="page"></section>
-    <section id="about" class="page"></section>
-    <section id="contact" class="page"></section>
-  </main>
-  <footer>Footer</footer>
-  <script type="module" src="public/app.js"></script>
-</body>
-
+      <select class="theme-selector" data-selector="theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </header>
+    <main>
+      <section id="home" class="page"></section>
+    </main>
+    <script type="module" src="public/app.js"></script>
+  </body>
 </html>

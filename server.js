@@ -17,12 +17,15 @@ const mimeTypes = {
   '.json': 'application/json',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
-  '.gif': 'image/gif'
+  '.gif': 'image/gif',
 };
 
 // Create HTTP server
 const server = createServer(async (req, res) => {
-  let filePath = join(process.cwd(), req.url === '/' ? 'public/index.html' : req.url);
+  let filePath = join(
+    process.cwd(),
+    req.url === '/' ? 'public/index.html' : req.url
+  );
 
   try {
     await access(filePath);
@@ -63,7 +66,7 @@ wss.on('connection', (ws) => {
 fs.watch(process.cwd(), { recursive: true }, (event, filename) => {
   if (filename && !filename.includes('node_modules')) {
     console.log(`File ${filename} changed`);
-    wss.clients.forEach(client => {
+    wss.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
         client.send('reload');
       }

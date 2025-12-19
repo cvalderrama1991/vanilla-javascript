@@ -9,11 +9,16 @@
   "main": "server.js",
   "scripts": {
     "dev": "node --watch --env-file=.env server.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos",
   "license": "MIT",
   "dependencies": {
     "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "prettier": "3.7.4"
   }
 }
