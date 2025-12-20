@@ -4,7 +4,7 @@ const STORAGE_KEY = 'theme';
 
 // Load Saved Theme
 function loadTheme() {
-  const savedTheme = localStorage.getItem(STORAGE_KEY) || 'systeme';
+  const savedTheme = localStorage.getItem(STORAGE_KEY) || 'system';
 
   root.setAttribute('data-theme', savedTheme);
   theme_selector.value = savedTheme;
