@@ -58,34 +58,61 @@ a {
   color: inherit;
 }
 
-.main-header {
+.header {
+  background-color: var(--bg);
   border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: var(--header-height);
-  padding: 0 1rem;
 }
 
-.home-link-container svg:hover {
-  transform: rotate(90deg);
-  transition: transform 1s ease-in-out;
+.home-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-link-container > svg > path {
-  fill: var(--fg);
+.home-link > svg {
+  fill: green;
+}
+
+.home-link > svg > path {
+  fill: inherit;
 }
 
 .theme-selector {
-  border: 1px solid var(--border-color);
   padding: 0.25rem;
+  border: 1px solid var(--border-color);
   border-radius: 0.25rem;
 }
 
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.page {
+  height: 100vh;
+  padding-top: var(--header-height);
+  margin: 1rem;
+}
+
+.donut {
+  background-image: radial-gradient(white 25%, black 65%);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
 }

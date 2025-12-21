@@ -13,14 +13,13 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <a href="#home">
-        <div class="home-link-container">
+    <header class="header">
+      <div class="header-container">
+        <a href="#home" data-link="home" class="home-link">
           <svg
             width="48"
             height="48"
             viewBox="0 0 48 48"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -48,18 +47,22 @@
               d="M7.70693 7.85011L18.0368 12.2772L22.4639 22.6071L12.134 18.18L7.70693 7.85011Z"
             />
           </svg>
-        </div>
-      </a>
+        </a>
 
-      <h1>Vanilla JavaScript</h1>
-      <select class="theme-selector" data-selector="theme">
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-      </select>
+        <h1>Vanilla JavaScript</h1>
+        <select class="theme-selector" data-selector="theme">
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
     </header>
     <main>
-      <section id="home" class="page"></section>
+      <div id="home" class="page">
+        <div class="donut">
+          <div class="donut-inner"></div>
+        </div>
+      </div>
     </main>
     <script type="module" src="public/app.js"></script>
   </body>

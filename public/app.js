@@ -24,3 +24,5 @@ theme_selector.addEventListener('change', (e) => {
 
 // Initial Theme
 loadTheme();
+
+console.log('Test');
