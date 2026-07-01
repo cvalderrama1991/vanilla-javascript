@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vanilla JavaScript</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Full Code Ahead</h1>
+  </header>
+  <main>
+    <form class="input-form" data-form="input">
+      <div class="form-control">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" value="" id="phone" data-input="phone">
+      </div>
+      <div class="form-control">
+        <label for="date">Date</label>
+        <input type="date" name="date" value="" id="date" data-input="date">
+      </div>
+      <div class="form-control">
+        <label for="time">Time</label>
+        <input type="time" name="time" value="" id="time" data-input="time">
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" value="" id="email" data-input="email">
+      </div>
+      <div class="form-control">
+        <label for="text">Text</label>
+        <input type="text" name="text" value="" id="text" data-input="text">
+      </div>
+      <div class="form-control">
+        <label for="number">Number</label>
+        <input type="number" name="number" value="" id="number" data-input="number">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script>
+    function refresh_page() {
+      setInterval(function () {
+        window.location.reload()
+      }, 9000)
+    }
+
+    refresh_page()
+  </script>
+</body>
+
+</html>
